@@ -7,9 +7,21 @@ cd fastapi-project
 
 3.pip install -r requirements.txt
 
+# Start the main server
+
 4.python .\server.py
 
-http://127.0.0.1:5005/docs
+# Start the celery worker server
+
+5.celery -A app.tasks.celery_app worker --loglevel=info
+
+# start redis
+
+6.redis-server
+
+#check the swagger api/docs
+
+`http://127.0.0.1:5005/docs`
 
 ## API FOR UPLOADING CSV
 
