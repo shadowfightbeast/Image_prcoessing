@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+sqlalchemy==2.0.29
+sqlmodel==0.0.16
+aiofiles
+requests
+Pillow
+celery
+redis
+flower
